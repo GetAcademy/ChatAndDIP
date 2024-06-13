@@ -1,6 +1,8 @@
-﻿namespace ChatAsIntroToDependencyInversion
+﻿using Chat.Server;
+
+namespace ChatAsIntroToDependencyInversion
 {
-    internal class ChatClient
+    internal class ChatClient : IChatClient
     {
         private readonly string _name;
         private readonly ChatServer _server;

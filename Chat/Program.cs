@@ -1,16 +1,18 @@
-﻿using ChatAsIntroToDependencyInversion;
+﻿
+using Chat.Server;
+using ChatAsIntroToDependencyInversion;
 
 var server = new ChatServer();
 
-var client1 = new ChatClient("Per", server);
-var client2 = new ChatClient("Pål", server);
-var client3 = new ChatClient("Espen", server);
+var per = new ChatClient("Per", server);
+var pål = new ChatClient("Pål", server);
+var espen = new ChatClient("Espen", server);
 
-client1.Say("Hello");
+per.Say("Hello");
 // Pål og Espen får beskjed "Per sier Hello"
 
-client2.Say("Hello");
+pål.Say("Hello");
 // Per og Espen får beskjed "Pål sier Hello"
 
-client3.Say("Hello");
+espen.Say("Hello");
 // Per og Pål får beskjed "Espen sier Hello"
