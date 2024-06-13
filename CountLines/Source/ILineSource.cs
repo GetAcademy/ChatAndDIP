@@ -1,4 +1,4 @@
-﻿namespace CountLines
+﻿namespace CountLines.Source
 {
     internal interface ILineSource
     {

@@ -1,4 +1,6 @@
-﻿namespace CountLines
+﻿using CountLines.Source;
+
+namespace CountLines
 {
     internal class LineCountService2
     {
